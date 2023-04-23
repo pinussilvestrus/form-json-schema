@@ -1,0 +1,4 @@
+*.json
+.nyc_output
+coverage
+dist
