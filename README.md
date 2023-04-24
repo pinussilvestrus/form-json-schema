@@ -2,7 +2,7 @@
 
 # @bpmn-io/form-json-schema
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/pinussilvestrus/form-json-schema/CI.yml?branch=master)](https://github.com/pinussilvestrus/form-json-schema/actions?query=workflow%3ACI)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/pinussilvestrus/form-json-schema/CI.yml?branch=main)](https://github.com/pinussilvestrus/form-json-schema/actions?query=workflow%3ACI)
 
 
 
