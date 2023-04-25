@@ -15,7 +15,7 @@ const validator = createValidator(schema, errorMessages);
 
 describe('validation', function() {
 
-  function validateTemplate(template) {
+  function validateForm(template) {
 
     const valid = validator(template);
 
@@ -27,26 +27,26 @@ describe('validation', function() {
     };
   }
 
-  function testTemplate(name, file, only = false) {
+  function testForm(name, file, only = false) {
 
     if (!file) {
       file = `../fixtures/${name}.js`;
     }
 
-    (only ? it.only : it)('should validate template - ' + name, async function() {
+    (only ? it.only : it)('should validate form - ' + name, async function() {
 
       // given
       const testDefinition = await import(file);
 
       const {
         errors: expectedErrors,
-        template
+        form
       } = testDefinition;
 
       // when
       const {
         errors
-      } = validateTemplate(template);
+      } = validateForm(form);
 
       // then
       expect(errors).to.eql(expectedErrors);
@@ -55,8 +55,156 @@ describe('validation', function() {
 
   // eslint-disable-next-line no-unused-vars
   function testOnly(name, file) {
-    return testTemplate(name, file, true);
+    return testForm(name, file, true);
   }
+
+
+  testForm('simple');
+
+
+  testForm('complex');
+
+
+  describe('rules - required properties', function() {
+
+    testForm('no-subtype');
+
+
+    testForm('no-key');
+
+
+    testForm('no-action');
+
+
+    testForm('no-values-valuesKey');
+
+  });
+
+
+  describe('rules - allowed properties', function() {
+
+    testForm('text-not-allowed');
+
+
+    testForm('label-not-allowed');
+
+
+    testForm('description-not-allowed');
+
+
+    testForm('key-not-allowed');
+
+
+    testForm('disabled-not-allowed');
+
+
+    testForm('action-not-allowed');
+
+
+    testForm('source-not-allowed');
+
+
+    testForm('alt-not-allowed');
+
+
+    testForm('subtype-not-allowed');
+
+
+    testForm('dateLabel-not-allowed');
+
+
+    testForm('disallowPassedDates-not-allowed');
+
+
+    testForm('timeLabel-not-allowed');
+
+
+    testForm('timeInterval-not-allowed');
+
+
+    testForm('use24h-not-allowed');
+
+
+    testForm('timeSerializingFormat-not-allowed');
+
+
+    testForm('increment-not-allowed');
+
+
+    testForm('decimalDigits-not-allowed');
+
+
+    testForm('serializeToString-not-allowed');
+
+
+    testForm('searchable-not-allowed');
+
+
+    testForm('validate-not-allowed');
+
+
+    testForm('values-not-allowed');
+
+
+    testForm('valuesKey-not-allowed');
+
+
+    testForm('validate-max-not-allowed');
+
+
+    testForm('validate-min-not-allowed');
+
+
+    testForm('validate-pattern-not-allowed');
+
+
+    testForm('validate-validationType-not-allowed');
+
+
+    testForm('validate-maxLength-not-allowed');
+
+
+    testForm('validate-minLength-not-allowed');
+
+
+    testForm('appearance-prefixAdorner-not-allowed');
+
+
+    testForm('appearance-suffixAdorner-not-allowed');
+
+
+    testForm('defaultValue-not-allowed');
+
+  });
+
+
+  describe('rules - default', function() {
+
+    testForm('layout-not-allowed');
+
+
+    testForm('properties-not-allowed');
+
+
+    testForm('conditional-not-allowed');
+
+  });
+
+
+  describe('rules - defaultValue type', function() {
+
+    testForm('defaultValue-no-boolean');
+
+
+    testForm('defaultValue-no-string');
+
+
+    testForm('defaultValue-no-string-or-number');
+
+
+    testForm('defaultValue-no-array');
+
+  });
 
 });
 

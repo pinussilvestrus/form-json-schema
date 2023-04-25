@@ -14,7 +14,12 @@ JSON Schema for [form-js](https://github.com/bpmn-io/form-js). The schema is bui
 Set the `$schema` attribute to reference the [JSON Schema definition](./resources/schema.json).
 
 ```js
-
+{
+  "$schema": "https://unpkg.com/@bpmn-io/form-json-schema/resources/schema.json",
+  "type": "default",
+  "schemaVersion": 7,
+  "components": []
+}
 ```
 
 You can also use a specific version.

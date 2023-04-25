@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "/#component/rules-required-properties",
+  "allOf": [
+    {
+      "if": {
+        "$ref": "../field-types/inputs.json"
+      },
+      "then": {
+        "required": [
+          "key"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "datetime"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "required": [
+          "subtype"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "button"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "required": [
+          "action"
+        ]
+      }
+    },
+    {
+      "if": {
+        "$ref": "../field-types/multi-inputs.json"
+      },
+      "then": {
+        "anyOf": [
+          {
+            "required": [
+              "values"
+            ]
+          },
+          {
+            "required": [
+              "valuesKey"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
