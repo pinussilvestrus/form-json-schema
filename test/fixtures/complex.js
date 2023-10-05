@@ -37,6 +37,19 @@ export const form = {
       }
     },
     {
+      'label': 'I am a read only texfield',
+      'type': 'textfield',
+      'id': 'Field_1r9b6p2',
+      'key': 'readonly_textfield',
+      'description': 'I am a read only texfield description',
+      'readonly': true,
+      'defaultValue': 'value',
+      'layout': {
+        'row': 'Row_14setyc',
+        'columns': 6
+      }
+    },
+    {
       'label': 'I am a number field',
       'type': 'number',
       'id': 'Field_0ltb6av',

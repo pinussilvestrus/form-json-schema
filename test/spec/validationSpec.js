@@ -187,6 +187,9 @@ describe('validation', function() {
 
     testForm('path-not-allowed');
 
+
+    testForm('readonly-not-allowed');
+
   });
 
 

@@ -68,6 +68,7 @@
           "description": false,
           "key": false,
           "disabled": false,
+          "readonly": false,
           "validate": false
         }
       }

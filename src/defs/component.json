@@ -54,6 +54,11 @@
       "description": "Binds the form field to a form variable.",
       "type": "string"
     },
+    "readonly": {
+      "$id": "#/component/readonly",
+      "description": "Makes the form field read only.",
+      "type": "boolean"
+    },
     "disabled": {
       "$id": "#/component/disabled",
       "description": "Disables the form field.",
