@@ -1,6 +1,6 @@
 > 🚧 🚧 🚧 
 
-# @bpmn-io/form-json-schema
+# form-json-schema
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/pinussilvestrus/form-json-schema/CI.yml?branch=main)](https://github.com/pinussilvestrus/form-json-schema/actions?query=workflow%3ACI)
 
@@ -15,9 +15,9 @@ Set the `$schema` attribute to reference the [JSON Schema definition](./resource
 
 ```js
 {
-  "$schema": "https://unpkg.com/@bpmn-io/form-json-schema/resources/schema.json",
+  "$schema": "https://unpkg.com/form-json-schema/resources/schema.json",
   "type": "default",
-  "schemaVersion": 7,
+  "schemaVersion": 11,
   "components": []
 }
 ```
@@ -25,7 +25,7 @@ Set the `$schema` attribute to reference the [JSON Schema definition](./resource
 You can also use a specific version.
 
 ```js
-"$schema": "https://unpkg.com/@bpmn-io/form-json-schema@0.1.0/resources/schema.json"
+"$schema": "https://unpkg.com/form-json-schema@0.1.0/resources/schema.json"
 ```
 
 ## Build and Run
