@@ -286,6 +286,7 @@
                     "description": false,
                     "key": false,
                     "disabled": false,
+                    "readonly": false,
                     "validate": false
                   }
                 }
@@ -741,6 +742,11 @@
             "$id": "#/component/key",
             "description": "Binds the form field to a form variable.",
             "type": "string"
+          },
+          "readonly": {
+            "$id": "#/component/readonly",
+            "description": "Makes the form field read only.",
+            "type": "boolean"
           },
           "disabled": {
             "$id": "#/component/disabled",
