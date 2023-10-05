@@ -65,6 +65,9 @@ describe('validation', function() {
   testForm('complex');
 
 
+  testForm('groups');
+
+
   describe('rules - required properties', function() {
 
     testForm('no-subtype');
@@ -177,6 +180,12 @@ describe('validation', function() {
 
 
     testForm('height-not-allowed');
+
+
+    testForm('showOutline-not-allowed');
+
+
+    testForm('path-not-allowed');
 
   });
 
