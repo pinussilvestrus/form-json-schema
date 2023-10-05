@@ -171,6 +171,11 @@
       "description": "Form fields can be configured with an options source defining the individual choices the select provides.",
       "type": "string"
     },
+    "valuesExpression": {
+      "$id": "#/component/valuesExpression",
+      "description": "Form fields can be configured with a FEEL expression defining the individual choices the select provides.",
+      "type": "string"
+    },
     "height": {
       "$id": "#/component/height",
       "description": "The height of the spacer component.",

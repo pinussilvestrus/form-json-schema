@@ -25,6 +25,13 @@ export const errors = [
   },
   {
     instancePath: '/components/0',
+    schemaPath: '#/properties/components/items/allOf/0/allOf/3/then/anyOf/2/required',
+    keyword: 'required',
+    params: { missingProperty: 'valuesExpression' },
+    message: "must have required property 'valuesExpression'"
+  },
+  {
+    instancePath: '/components/0',
     schemaPath: '#/properties/components/items/allOf/0/allOf/3/then/anyOf',
     keyword: 'anyOf',
     params: {},

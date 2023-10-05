@@ -178,6 +178,11 @@
                       "required": [
                         "valuesKey"
                       ]
+                    },
+                    {
+                      "required": [
+                        "valuesExpression"
+                      ]
                     }
                   ]
                 }
@@ -424,7 +429,8 @@
                 "then": {
                   "properties": {
                     "values": false,
-                    "valuesKey": false
+                    "valuesKey": false,
+                    "valuesExpression": false
                   }
                 }
               },
@@ -865,6 +871,11 @@
           "valuesKey": {
             "$id": "#/component/valuesKey",
             "description": "Form fields can be configured with an options source defining the individual choices the select provides.",
+            "type": "string"
+          },
+          "valuesExpression": {
+            "$id": "#/component/valuesExpression",
+            "description": "Form fields can be configured with a FEEL expression defining the individual choices the select provides.",
             "type": "string"
           },
           "height": {
