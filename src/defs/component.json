@@ -149,7 +149,10 @@
     "increment": {
       "$id": "#/component/increment",
       "description": "Defines the increment between valid field value.",
-      "type": "string"
+      "type": [
+        "number",
+        "string"
+      ]
     },
     "decimalDigits": {
       "$id": "#/component/decimalDigits",
