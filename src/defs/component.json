@@ -57,12 +57,18 @@
     "readonly": {
       "$id": "#/component/readonly",
       "description": "Makes the form field read only.",
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "string"
+      ]
     },
     "disabled": {
       "$id": "#/component/disabled",
       "description": "Disables the form field.",
-      "type": "boolean"
+      "type": [
+        "boolean",
+        "string"
+      ]
     },
     "text": {
       "$id": "#/component/text",

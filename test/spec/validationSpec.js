@@ -71,6 +71,9 @@ describe('validation', function() {
   testForm('schemaVersion-not-supported');
 
 
+  testForm('expression-properties');
+
+
   describe('rules - required properties', function() {
 
     testForm('no-subtype');

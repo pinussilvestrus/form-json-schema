@@ -26,22 +26,34 @@
     },
     "minLength": {
       "$id": "/#component/validate/minLength",
-      "type": "integer",
+      "type": [
+        "integer",
+        "string"
+      ],
       "description": "Form field value must be at least the provided length."
     },
     "maxLength": {
       "$id": "/#component/validate/maxLength",
-      "type": "integer",
+      "type": [
+        "integer",
+        "string"
+      ],
       "description": "Form field value must be at most the provided length."
     },
     "min": {
       "$id": "/#component/validate/min",
-      "type": "number",
+      "type": [
+        "number",
+        "string"
+      ],
       "description": "Form field value must be at least the provided number."
     },
     "max": {
       "$id": "/#component/validate/max",
-      "type": "number",
+      "type": [
+        "number",
+        "string"
+      ],
       "description": "Form field value must be at most the provided number."
     }
   }
