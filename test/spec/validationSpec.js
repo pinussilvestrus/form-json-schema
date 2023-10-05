@@ -74,6 +74,9 @@ describe('validation', function() {
   testForm('expression-properties');
 
 
+  testForm('increment');
+
+
   describe('rules - required properties', function() {
 
     testForm('no-subtype');
