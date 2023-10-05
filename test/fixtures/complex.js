@@ -459,6 +459,11 @@ export const form = {
       }
     },
     {
+      'id': 'Spacer_1',
+      'type': 'spacer',
+      'height': 60
+    },
+    {
       'action': 'reset',
       'label': 'reset',
       'type': 'button',
@@ -476,7 +481,7 @@ export const form = {
     'name': 'Camunda Modeler',
     'version': '5.10.0-dev'
   },
-  'schemaVersion': 8
+  'schemaVersion': 11
 };
 
 export const errors = null;

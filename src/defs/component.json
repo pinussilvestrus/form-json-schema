@@ -29,7 +29,8 @@
         "taglist",
         "image",
         "text",
-        "button"
+        "button",
+        "spacer"
       ]
     },
     "id": {
@@ -157,6 +158,11 @@
       "$id": "#/component/valuesKey",
       "description": "Form fields can be configured with an options source defining the individual choices the select provides.",
       "type": "string"
+    },
+    "height": {
+      "$id": "#/component/height",
+      "description": "The height of the spacer component.",
+      "type": "number"
     },
     "validate": {
       "$id": "#/component/validate",

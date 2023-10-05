@@ -175,6 +175,9 @@ describe('validation', function() {
 
     testForm('defaultValue-not-allowed');
 
+
+    testForm('height-not-allowed');
+
   });
 
 
