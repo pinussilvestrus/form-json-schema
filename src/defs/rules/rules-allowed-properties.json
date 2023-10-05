@@ -295,6 +295,25 @@
           "defaultValue": false
         }
       }
+    },
+    {
+      "if": {
+        "not": {
+          "properties": {
+            "type": {
+              "const": "spacer"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      },
+      "then": {
+        "properties": {
+          "height": false
+        }
+      }
     }
   ]
 }
