@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to [@bpmn-io/form-json-schema](https://github.com/pinussilvestrus/form-json-schema) are documented here. We use [semantic versioning](http://semver.org/) for releases.
+All notable changes to [form-json-schema](https://github.com/pinussilvestrus/form-json-schema) are documented here. We use [semantic versioning](http://semver.org/) for releases.
 
 ## Unreleased
 
