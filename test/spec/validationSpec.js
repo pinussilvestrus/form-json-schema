@@ -85,7 +85,7 @@ describe('validation', function() {
     testForm('no-action');
 
 
-    testForm('no-values-valuesKey');
+    testForm('no-values-property');
 
   });
 
@@ -156,6 +156,9 @@ describe('validation', function() {
 
 
     testForm('valuesKey-not-allowed');
+
+
+    testForm('valuesExpression-not-allowed');
 
 
     testForm('validate-max-not-allowed');

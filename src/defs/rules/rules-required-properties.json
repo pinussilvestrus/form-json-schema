@@ -61,6 +61,11 @@
             "required": [
               "valuesKey"
             ]
+          },
+          {
+            "required": [
+              "valuesExpression"
+            ]
           }
         ]
       }
