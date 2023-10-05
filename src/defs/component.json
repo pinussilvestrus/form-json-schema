@@ -30,7 +30,8 @@
         "image",
         "text",
         "button",
-        "spacer"
+        "spacer",
+        "group"
       ]
     },
     "id": {
@@ -163,6 +164,16 @@
       "$id": "#/component/height",
       "description": "The height of the spacer component.",
       "type": "number"
+    },
+    "path": {
+      "$id": "#/component/path",
+      "description": "Assigns a path that maps form field children into a data object.",
+      "type": "string"
+    },
+    "showOutline": {
+      "$id": "#/component/showOutline",
+      "description": "Groups can have a visual outline.",
+      "type": "boolean"
     },
     "validate": {
       "$id": "#/component/validate",

@@ -37,6 +37,16 @@
               "required": [
                 "type"
               ]
+            },
+            {
+              "properties": {
+                "type": {
+                  "const": "group"
+                }
+              },
+              "required": [
+                "type"
+              ]
             }
           ]
         }
@@ -312,6 +322,26 @@
       "then": {
         "properties": {
           "height": false
+        }
+      }
+    },
+    {
+      "if": {
+        "not": {
+          "properties": {
+            "type": {
+              "const": "group"
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      },
+      "then": {
+        "properties": {
+          "path": false,
+          "showOutline": false
         }
       }
     }
