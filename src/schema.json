@@ -23,7 +23,9 @@
     "schemaVersion": {
       "$id": "#/schemaVersion",
       "description": "The schema version of a form",
-      "type": "integer"
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 11
     },
     "executionPlatform": {
       "$id": "#/executionPlatform",
