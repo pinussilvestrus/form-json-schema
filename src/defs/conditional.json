@@ -6,7 +6,10 @@
   "properties": {
     "hide": {
       "$id": "/#component/conditional/hide",
-      "type": "string",
+      "type": [
+        "string",
+        "boolean"
+      ],
       "description": "Expression to hide the form field."
     }
   }
