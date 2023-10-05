@@ -68,6 +68,9 @@ describe('validation', function() {
   testForm('groups');
 
 
+  testForm('schemaVersion-not-supported');
+
+
   describe('rules - required properties', function() {
 
     testForm('no-subtype');
