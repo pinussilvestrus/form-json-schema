@@ -82,7 +82,8 @@
     },
     "action": {
       "$id": "#/component/action",
-      "description": "A button can either trigger a submit or a reset action.",
+      "description": "A button can either trigger a submit or a reset action. Defaults to submit.",
+      "default": "submit",
       "type": "string",
       "enum": [
         "submit",
