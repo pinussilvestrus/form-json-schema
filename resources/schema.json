@@ -807,7 +807,8 @@
           "valuesKey": {
             "$id": "#/component/valuesKey",
             "description": "Form fields can be configured with an options source defining the individual choices the select provides.",
-            "type": "string"
+            "type": "string",
+            "pattern": "^[^\\s]*$"
           },
           "valuesExpression": {
             "$id": "#/component/valuesExpression",
