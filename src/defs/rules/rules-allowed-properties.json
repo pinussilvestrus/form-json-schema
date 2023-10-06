@@ -329,7 +329,8 @@
         "properties": {
           "path": false,
           "showOutline": false,
-          "verticalAlignment": false
+          "verticalAlignment": false,
+          "components": false
         }
       }
     }

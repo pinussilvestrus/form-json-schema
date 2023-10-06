@@ -172,6 +172,16 @@
       "description": "The height of the spacer component.",
       "type": "number"
     },
+    "components": {
+      "type": "array",
+      "$id": "#/component/components",
+      "description": "List of form field children.",
+      "items": {
+        "type": "object",
+        "$ref": "component.json",
+        "$id": "#/components/component"
+      }
+    },
     "path": {
       "$id": "#/component/path",
       "description": "Assigns a path that maps form field children into a data object. Can be a dot separated path.",

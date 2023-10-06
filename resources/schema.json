@@ -6,7 +6,6 @@
   "allOf": [
     {
       "$schema": "http://json-schema.org/draft-07/schema",
-      "$id": "/#component/rules-default",
       "allOf": [
         {
           "if": {
@@ -88,7 +87,6 @@
         "allOf": [
           {
             "$schema": "http://json-schema.org/draft-07/schema",
-            "$id": "/#component/rules-required-properties",
             "allOf": [
               {
                 "if": {
@@ -121,7 +119,6 @@
           },
           {
             "$schema": "http://json-schema.org/draft-07/schema",
-            "$id": "/#component/rules-allowed-properties",
             "allOf": [
               {
                 "if": {
@@ -147,24 +144,7 @@
                   "not": {
                     "anyOf": [
                       {
-                        "properties": {
-                          "type": {
-                            "enum": [
-                              "checkbox",
-                              "checklist",
-                              "datetime",
-                              "number",
-                              "radio",
-                              "select",
-                              "taglist",
-                              "textfield",
-                              "textarea"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "type"
-                        ]
+                        "$ref": "#/properties/components/items/allOf/0/allOf/0/if"
                       },
                       {
                         "properties": {
@@ -177,17 +157,7 @@
                         ]
                       },
                       {
-                        "properties": {
-                          "type": {
-                            "enum": [
-                              "group",
-                              "dynamiclist"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "type"
-                        ]
+                        "$ref": "#/properties/components/items/allOf/1/allOf/14/if/not"
                       }
                     ]
                   }
@@ -201,24 +171,7 @@
               {
                 "if": {
                   "not": {
-                    "properties": {
-                      "type": {
-                        "enum": [
-                          "checkbox",
-                          "checklist",
-                          "datetime",
-                          "number",
-                          "radio",
-                          "select",
-                          "taglist",
-                          "textfield",
-                          "textarea"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type"
-                    ]
+                    "$ref": "#/properties/components/items/allOf/0/allOf/0/if"
                   }
                 },
                 "then": {
@@ -450,42 +403,13 @@
                   "anyOf": [
                     {
                       "not": {
-                        "properties": {
-                          "type": {
-                            "enum": [
-                              "checkbox",
-                              "checklist",
-                              "datetime",
-                              "number",
-                              "radio",
-                              "select",
-                              "taglist",
-                              "textfield",
-                              "textarea"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "type"
-                        ]
+                        "$ref": "#/properties/components/items/allOf/0/allOf/0/if"
                       }
                     },
                     {
                       "allOf": [
                         {
-                          "properties": {
-                            "type": {
-                              "enum": [
-                                "checklist",
-                                "radio",
-                                "select",
-                                "taglist"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "type"
-                          ]
+                          "$ref": "#/properties/components/items/allOf/1/allOf/8/if/not"
                         },
                         {
                           "properties": {
@@ -546,7 +470,8 @@
                   "properties": {
                     "path": false,
                     "showOutline": false,
-                    "verticalAlignment": false
+                    "verticalAlignment": false,
+                    "components": false
                   }
                 }
               }
@@ -554,7 +479,6 @@
           },
           {
             "$schema": "http://json-schema.org/draft-07/schema",
-            "$id": "/#component/rules-defaultValue-type",
             "allOf": [
               {
                 "if": {
@@ -828,6 +752,16 @@
             "$id": "#/component/height",
             "description": "The height of the spacer component.",
             "type": "number"
+          },
+          "components": {
+            "type": "array",
+            "$id": "#/component/components",
+            "description": "List of form field children.",
+            "items": {
+              "type": "object",
+              "$ref": "#/properties/components/items",
+              "$id": "#/components/component"
+            }
           },
           "path": {
             "$id": "#/component/path",
