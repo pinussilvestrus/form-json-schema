@@ -83,13 +83,13 @@ describe('validation', function() {
   testForm('no-subtype');
 
 
+  testForm('no-values-property');
+
+
   describe('rules - required properties', function() {
 
 
     testForm('no-key');
-
-
-    testForm('no-values-property');
 
   });
 

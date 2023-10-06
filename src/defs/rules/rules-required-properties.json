@@ -11,30 +11,6 @@
           "key"
         ]
       }
-    },
-    {
-      "if": {
-        "$ref": "../field-types/multi-inputs.json"
-      },
-      "then": {
-        "anyOf": [
-          {
-            "required": [
-              "values"
-            ]
-          },
-          {
-            "required": [
-              "valuesKey"
-            ]
-          },
-          {
-            "required": [
-              "valuesExpression"
-            ]
-          }
-        ]
-      }
     }
   ]
 }

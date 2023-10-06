@@ -116,42 +116,6 @@
                     "key"
                   ]
                 }
-              },
-              {
-                "if": {
-                  "properties": {
-                    "type": {
-                      "enum": [
-                        "checklist",
-                        "radio",
-                        "select",
-                        "taglist"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type"
-                  ]
-                },
-                "then": {
-                  "anyOf": [
-                    {
-                      "required": [
-                        "values"
-                      ]
-                    },
-                    {
-                      "required": [
-                        "valuesKey"
-                      ]
-                    },
-                    {
-                      "required": [
-                        "valuesExpression"
-                      ]
-                    }
-                  ]
-                }
               }
             ]
           },
