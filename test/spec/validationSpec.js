@@ -99,6 +99,9 @@ describe('validation', function() {
   testForm('verticalAlignment-invalid');
 
 
+  testForm('validate-validationType');
+
+
   describe('rules - required properties', function() {
 
 
