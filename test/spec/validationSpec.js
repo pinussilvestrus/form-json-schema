@@ -77,15 +77,15 @@ describe('validation', function() {
   testForm('increment');
 
 
+  testForm('no-action');
+
+
   describe('rules - required properties', function() {
 
     testForm('no-subtype');
 
 
     testForm('no-key');
-
-
-    testForm('no-action');
 
 
     testForm('no-values-property');

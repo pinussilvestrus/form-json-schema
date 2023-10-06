@@ -31,23 +31,6 @@
     },
     {
       "if": {
-        "properties": {
-          "type": {
-            "const": "button"
-          }
-        },
-        "required": [
-          "type"
-        ]
-      },
-      "then": {
-        "required": [
-          "action"
-        ]
-      }
-    },
-    {
-      "if": {
         "$ref": "../field-types/multi-inputs.json"
       },
       "then": {
