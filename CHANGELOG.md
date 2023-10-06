@@ -6,6 +6,6 @@ All notable changes to [form-json-schema](https://github.com/pinussilvestrus/for
 
 ___Note:__ Yet to be released changes appear here._
 
-## 0.1.0
+## 0.2.0
 
 * `FEAT`: initial version :tada:

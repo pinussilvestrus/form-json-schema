@@ -25,7 +25,7 @@ Set the `$schema` attribute to reference the [JSON Schema definition](./resource
 You can also use a specific version.
 
 ```js
-"$schema": "https://unpkg.com/form-json-schema@0.1.0/resources/schema.json"
+"$schema": "https://unpkg.com/form-json-schema@0.2.0/resources/schema.json"
 ```
 
 ## Build and Run
