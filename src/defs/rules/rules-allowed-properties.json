@@ -39,14 +39,7 @@
               ]
             },
             {
-              "properties": {
-                "type": {
-                  "const": "group"
-                }
-              },
-              "required": [
-                "type"
-              ]
+              "$ref": "../field-types/containers.json"
             }
           ]
         }
@@ -330,20 +323,14 @@
     {
       "if": {
         "not": {
-          "properties": {
-            "type": {
-              "const": "group"
-            }
-          },
-          "required": [
-            "type"
-          ]
+          "$ref": "../field-types/containers.json"
         }
       },
       "then": {
         "properties": {
           "path": false,
-          "showOutline": false
+          "showOutline": false,
+          "verticalAlignment": false
         }
       }
     }

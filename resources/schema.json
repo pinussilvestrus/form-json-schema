@@ -179,7 +179,10 @@
                       {
                         "properties": {
                           "type": {
-                            "const": "group"
+                            "enum": [
+                              "group",
+                              "dynamiclist"
+                            ]
                           }
                         },
                         "required": [
@@ -528,7 +531,10 @@
                   "not": {
                     "properties": {
                       "type": {
-                        "const": "group"
+                        "enum": [
+                          "group",
+                          "dynamiclist"
+                        ]
                       }
                     },
                     "required": [
@@ -539,7 +545,8 @@
                 "then": {
                   "properties": {
                     "path": false,
-                    "showOutline": false
+                    "showOutline": false,
+                    "verticalAlignment": false
                   }
                 }
               }
@@ -643,6 +650,7 @@
         "properties": {
           "type": {
             "$id": "#/component/type",
+            "$schema": "http://json-schema.org/draft-07/schema",
             "description": "The type of a form field.",
             "enum": [
               "textfield",
@@ -658,7 +666,8 @@
               "text",
               "button",
               "spacer",
-              "group"
+              "group",
+              "dynamiclist"
             ]
           },
           "id": {
@@ -828,8 +837,19 @@
           },
           "showOutline": {
             "$id": "#/component/showOutline",
-            "description": "Groups can have a visual outline.",
+            "description": "Groups and dynamic lists can have a visual outline.",
             "type": "boolean"
+          },
+          "verticalAlignment": {
+            "$id": "#/component/verticalAlignment",
+            "description": "Groups and dynamic lists can be vertical aligned.",
+            "type": "string",
+            "default": "start",
+            "enum": [
+              "start",
+              "center",
+              "end"
+            ]
           },
           "validate": {
             "$id": "#/component/validate",
