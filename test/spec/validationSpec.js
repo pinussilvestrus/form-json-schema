@@ -80,9 +80,10 @@ describe('validation', function() {
   testForm('no-action');
 
 
-  describe('rules - required properties', function() {
+  testForm('no-subtype');
 
-    testForm('no-subtype');
+
+  describe('rules - required properties', function() {
 
 
     testForm('no-key');

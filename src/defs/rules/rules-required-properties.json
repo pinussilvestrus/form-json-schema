@@ -14,23 +14,6 @@
     },
     {
       "if": {
-        "properties": {
-          "type": {
-            "const": "datetime"
-          }
-        },
-        "required": [
-          "type"
-        ]
-      },
-      "then": {
-        "required": [
-          "subtype"
-        ]
-      }
-    },
-    {
-      "if": {
         "$ref": "../field-types/multi-inputs.json"
       },
       "then": {
