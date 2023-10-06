@@ -219,6 +219,9 @@ describe('validation', function() {
 
     testForm('verticalAlignment-not-allowed');
 
+
+    testForm('components-not-allowed');
+
   });
 
 
