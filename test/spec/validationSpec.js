@@ -48,6 +48,10 @@ describe('validation', function() {
         errors
       } = validateForm(form);
 
+      if (only) {
+        printNested(errors);
+      }
+
       // then
       expect(errors).to.eql(expectedErrors);
     });
@@ -241,6 +245,9 @@ describe('validation', function() {
 
 
     testForm('path-invalid');
+
+
+    testForm('valuesKey-invalid');
 
   });
 
