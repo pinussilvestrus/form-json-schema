@@ -49,7 +49,12 @@
         "type": "object",
         "$ref": "src/defs/component.json",
         "$id": "#/component"
-      }
+      },
+      "allOf": [
+        {
+          "$ref": "src/defs/examples/components.json"
+        }
+      ]
     }
   },
   "required": [ 
