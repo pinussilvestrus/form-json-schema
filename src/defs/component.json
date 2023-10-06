@@ -16,23 +16,7 @@
   "properties": {
     "type": {
       "$id": "#/component/type",
-      "description": "The type of a form field.",
-      "enum": [
-        "textfield",
-        "number",
-        "datetime",
-        "textarea",
-        "checkbox",
-        "radio",
-        "select",
-        "checklist",
-        "taglist",
-        "image",
-        "text",
-        "button",
-        "spacer",
-        "group"
-      ]
+      "$ref": "type.json"
     },
     "id": {
       "$id": "#/component/id",
@@ -196,8 +180,19 @@
     },
     "showOutline": {
       "$id": "#/component/showOutline",
-      "description": "Groups can have a visual outline.",
+      "description": "Groups and dynamic lists can have a visual outline.",
       "type": "boolean"
+    },
+    "verticalAlignment": {
+      "$id": "#/component/verticalAlignment",
+      "description": "Groups and dynamic lists can be vertical aligned.",
+      "type": "string",
+      "default": "start",
+      "enum": [
+        "start",
+        "center",
+        "end"
+      ]
     },
     "validate": {
       "$id": "#/component/validate",

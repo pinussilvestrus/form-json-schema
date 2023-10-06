@@ -90,6 +90,15 @@ describe('validation', function() {
   testForm('no-values-property');
 
 
+  testForm('dynamiclists');
+
+
+  testForm('verticalAlignment');
+
+
+  testForm('verticalAlignment-invalid');
+
+
   describe('rules - required properties', function() {
 
 
@@ -206,6 +215,9 @@ describe('validation', function() {
 
 
     testForm('readonly-not-allowed');
+
+
+    testForm('verticalAlignment-not-allowed');
 
   });
 
