@@ -15,7 +15,7 @@ const argv = process.argv.slice(2);
 
 async function bundleSchema(schema, path) {
   try {
-    const plainSchema = await refParser.dereference(schema);
+    const plainSchema = await refParser.bundle(schema);
     return writeSchema(plainSchema, path);
   } catch (e) {
     console.error(e);
