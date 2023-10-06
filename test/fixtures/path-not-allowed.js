@@ -4,7 +4,7 @@ export const form = {
     {
       type: 'text',
       text: 'text',
-      path: 'foo-bar'
+      path: 'foobar'
     }
   ]
 };

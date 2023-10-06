@@ -234,6 +234,16 @@ describe('validation', function() {
 
   });
 
+
+  describe('format', function() {
+
+    testForm('key-invalid');
+
+
+    testForm('path-invalid');
+
+  });
+
 });
 
 
