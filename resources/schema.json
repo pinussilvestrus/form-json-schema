@@ -121,23 +121,6 @@
                 "if": {
                   "properties": {
                     "type": {
-                      "const": "datetime"
-                    }
-                  },
-                  "required": [
-                    "type"
-                  ]
-                },
-                "then": {
-                  "required": [
-                    "subtype"
-                  ]
-                }
-              },
-              {
-                "if": {
-                  "properties": {
-                    "type": {
                       "enum": [
                         "checklist",
                         "radio",
@@ -787,8 +770,9 @@
           },
           "subtype": {
             "$id": "#/component/subtype",
-            "description": "Selects the type of the datetime component. This can either be date, time, or datetime.",
+            "description": "Selects the type of the datetime component. This can either be date, time, or datetime. Defaults to date.",
             "type": "string",
+            "default": "date",
             "enum": [
               "date",
               "time",
