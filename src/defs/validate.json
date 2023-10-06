@@ -16,6 +16,8 @@
       "enum": [
         "email",
         "phone",
+        "custom",
+        "",
         null
       ]
     },
