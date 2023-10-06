@@ -678,8 +678,9 @@
           },
           "key": {
             "$id": "#/component/key",
-            "description": "Binds the form field to a form variable.",
-            "type": "string"
+            "description": "Binds the form field to a form variable. Can be a dot separated path.",
+            "type": "string",
+            "pattern": "^\\w+(\\.\\w+)*$"
           },
           "readonly": {
             "$id": "#/component/readonly",
@@ -820,8 +821,9 @@
           },
           "path": {
             "$id": "#/component/path",
-            "description": "Assigns a path that maps form field children into a data object.",
-            "type": "string"
+            "description": "Assigns a path that maps form field children into a data object. Can be a dot separated path.",
+            "type": "string",
+            "pattern": "^(\\w+(\\.\\w+)*)*$"
           },
           "showOutline": {
             "$id": "#/component/showOutline",
