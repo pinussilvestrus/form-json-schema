@@ -472,6 +472,10 @@ export const form = {
       }
     },
     {
+      'type': 'separator',
+      'id': 'Separator_1'
+    },
+    {
       'id': 'Spacer_1',
       'type': 'spacer',
       'height': 60

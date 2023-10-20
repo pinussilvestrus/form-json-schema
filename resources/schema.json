@@ -591,7 +591,8 @@
               "button",
               "spacer",
               "group",
-              "dynamiclist"
+              "dynamiclist",
+              "separator"
             ]
           },
           "id": {
