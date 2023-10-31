@@ -1,4 +1,4 @@
-> 🚧 This project is still under development. Use at your own risk!
+> ## 🚧 This project is deprecated. Please use [@bpmn-io/form-json-schema](https://github.com/bpmn-io/form-js/tree/develop/packages/form-json-schema) instead.
 
 # form-json-schema
 
